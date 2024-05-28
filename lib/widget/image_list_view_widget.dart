@@ -17,8 +17,8 @@ class ImageListViewWidget extends StatelessWidget {
       () => appController.isLoading.value
           ? Center(
               child: LoadingAnimationWidget.flickr(
-                leftDotColor: const Color(0xFF0063DC),
-                rightDotColor: const Color(0xFFFF0084),
+                leftDotColor: Colors.greenAccent,
+                rightDotColor: Colors.blueGrey,
                 size: 30,
               ),
             )

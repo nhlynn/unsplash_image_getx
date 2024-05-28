@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 
@@ -17,7 +16,6 @@ class NetworkService {
 
     var response = await http.get(url);
 
-    debugPrint('My Response is $response');
     return response;
   }
 }

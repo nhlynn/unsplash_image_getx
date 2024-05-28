@@ -22,8 +22,8 @@ class ImageViewWidget extends StatelessWidget {
       ),
       placeholder: (context, url) => Center(
         child: LoadingAnimationWidget.flickr(
-          leftDotColor: const Color(0xFF0063DC),
-          rightDotColor: const Color(0xFFFF0084),
+          leftDotColor: Colors.greenAccent,
+          rightDotColor: Colors.blueGrey,
           size: 25,
         ),
       ),

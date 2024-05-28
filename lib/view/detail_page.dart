@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 import '../data/model/image_model.dart';
+import '../route/app_route.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({super.key});
@@ -66,7 +67,7 @@ class DetailPage extends StatelessWidget {
               Positioned(
                 bottom: 30,
                 child: Text(
-                  imageResult.createdAt ?? "",
+                  getFormattedDate(imageResult.createdAt ?? ""),
                   style: const TextStyle(
                     fontSize: 18,
                     color: Colors.white,
